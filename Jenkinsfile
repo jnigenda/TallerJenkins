@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'Hola'
         bat(script: 'SET', returnStdout: true)
+        bat 'echo %nombre%'
       }
     }
 
@@ -14,5 +15,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    nombre = 'JESUS'
   }
 }
