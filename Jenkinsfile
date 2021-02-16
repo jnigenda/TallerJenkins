@@ -17,7 +17,7 @@ pipeline {
 
     stage('Despedida') {
       steps {
-        input(message: 'lamina que termina', ok: 'Excelente taller')
+        input(message: 'Lastima que termino!', ok: 'Excelente taller')
       }
     }
 
