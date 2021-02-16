@@ -15,6 +15,12 @@ pipeline {
       }
     }
 
+    stage('Despedida') {
+      steps {
+        input(message: 'lamina que termina', ok: 'Excelente taller')
+      }
+    }
+
   }
   environment {
     nombre = 'JESUS'
