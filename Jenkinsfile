@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Crear archivo') {
+      steps {
+        writeFile(file: 'archivo.txt', text: 'Prueba taller')
+      }
+    }
+
   }
 }
